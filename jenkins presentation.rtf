@@ -1,0 +1,252 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\listtable 
+{\list\listhybrid
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'00.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'01.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc3\leveljc0\levelstartat1{\leveltext\'02\'02.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc2\leveljc0\levelstartat1{\leveltext\'02\'03.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc1\leveljc0\levelstartat1{\leveltext\'02\'04.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc0\leveljc0\levelstartat1{\leveltext\'02\'05.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc4\leveljc0\levelstartat1{\leveltext\'02\'06.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc3\leveljc0\levelstartat1{\leveltext\'02\'07.;}{\levelnumbers\'01;}\jclisttab\tx360}
+{\listlevel\levelnfc23\leveljc1\levelstartat0{\leveltext\'01\'B7;}{\levelnumbers;}\f2\jclisttab\tx360}\listid1 }}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs28\lang9  \fs36 JENKINS\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent360\pnstart1\pndec{\pntxta.}}
+\fi-360\li360\sa200\sl276\slmult1 INTRODUCTION \par
+{\pntext\f0 2.\tab}CI/CD\par
+{\pntext\f0 3.\tab}CI/CD Pipeline \par
+{\pntext\f0 4.\tab}Types of Pipeline\par
+{\pntext\f0 5.\tab}Types of jobs in jenkins\par
+{\pntext\f0 6.\tab}Jenkins Environments\par
+{\pntext\f0 7.\tab}Jenkins Important configuration files:\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\qc\fs36 INTRODUCTION\par
+\fs28\par
+
+\pard\sa200\sl276\slmult1\fs32 What is JENKINS:\b0\fs28\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Jenkins is an open-source automation server\par
+{\pntext\f2\'B7\tab}Jenkins Provide platform for continuous integration (CI) and continuous delivery (CD). \par
+{\pntext\f2\'B7\tab}It allows developers to automatically build, test, and deploy their applications, making the development process more efficient and reliable.\par
+{\pntext\f2\'B7\tab} It is written in Java and runs on java only.\par
+{\pntext\f2\'B7\tab}Port number is 8080\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs32 Key Components of Jenkins\b0\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent360\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Jenkins Server\par
+{\pntext\f0 2.\tab}Jenkins Jobs\par
+{\pntext\f0 3.\tab}Jenkins Plugins\par
+{\pntext\f0 4.\tab}Jenkins Nodes/Agents\par
+{\pntext\f0 5.\tab}Jenkins Web Interface\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs32 How Jenkins Works\b0\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent360\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b Source Code Management: \b0 Jenkins integrates with various version control systems like Git, SVN, and Mercurial to fetch the latest code\par
+{\pntext\f0 2.\tab}\b Build Triggers: \b0 Jenkins can be configured to trigger builds automatically based on events like code commits, scheduled times, or manual triggers.\par
+{\pntext\f0 3.\tab}\b Build Execution: \b0 Jenkins executes the build process, which can include compiling code, running tests, and packaging the application.\par
+{\pntext\f0 4.\tab}\b Post-Build Actions: \b0 After the build, Jenkins can perform additional tasks like deploying the application, sending notifications, or archiving artifacts.\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs32 Jenkins Architecture\b0\fs28\par
+Jenkins follows a master-agent architecture:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Master: \b0 The Jenkins server that manages jobs, schedules builds, and distributes tasks to agents.\par
+{\pntext\f2\'B7\tab}\b Agent: \b0 Machines that execute the jobs assigned by the master. Agents can be on the same machine as the master or on different machines.\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs32 Why we need Jenkins:\b0\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent360\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Automation\par
+{\pntext\f0 2.\tab}Scalability\par
+{\pntext\f0 3.\tab}Extensibility\par
+{\pntext\f0 4.\tab}Community Support\par
+{\pntext\f0 5.\tab}Continuous Integration\par
+{\pntext\f0 6.\tab}Continuous Deployment/Delivery\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs32 Why Jenkins is Popular\b0\fs28\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Open Source\par
+{\pntext\f2\'B7\tab}Extensibility\par
+{\pntext\f2\'B7\tab}Automation\par
+{\pntext\f2\'B7\tab}Ease of Use\par
+{\pntext\f2\'B7\tab}Scalability\par
+{\pntext\f2\'B7\tab}Continuous Integration and Continuous Delivery (CI/CD)\par
+{\pntext\f2\'B7\tab}Integration with Version Control Systems\par
+{\pntext\f2\'B7\tab}Active Community and Support\par
+{\pntext\f2\'B7\tab}Flexibility\par
+
+\pard\sa200\sl276\slmult1\b\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\fs36 CI/CD\fs28\par
+\par
+
+\pard\sa200\sl276\slmult1\fs32 Continuous Integration (CI)\fs28\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Continuous Integration (CI) is a software development where developers regularly merge their code changes into a shared repository, typically multiple times a day.\par
+{\pntext\f2\'B7\tab}Each merge triggers an automated build and testing process to detect integration issues early.\par
+{\pntext\f2\'B7\tab}CI aims to improve software quality and reduce the time it takes to deliver new features.\par
+
+\pard\sa200\sl276\slmult1\b\fs32 Continuous Delivery (CD)\fs28\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Continuous Delivery (CD) is an extension of CI that focuses on automating the deployment process so that code changes can be released to production at any time.\par
+{\pntext\f2\'B7\tab} It ensures that the codebase is always in a deployable state.\par
+{\pntext\f2\'B7\tab} CD aims to make software deployment a routine and reliable process. \par
+
+\pard\sa200\sl276\slmult1\qc\b\fs32\par
+\fs36 CI/CD PIPELINES\fs28\par
+\b0\par
+
+\pard\sa200\sl276\slmult1\b Continuous Integration (CI) Pipeline: \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 A Continuous Integration (CI) pipeline is an automated process that builds,tests,and deploys software code changes.\b\par
+
+\pard\sa200\sl276\slmult1 Continuous Deployment (CD) Pipeline: \b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A Continuous Deployment (CD) pipeline is an automated process that deploys and releases software to production environment.\par
+
+\pard\sa200\sl276\slmult1\b\par
+Benefits of a CI/CD \b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Faster Releases\par
+{\pntext\f2\'B7\tab}Early Detection of Issues\par
+{\pntext\f2\'B7\tab}Improved Quality\par
+{\pntext\f2\'B7\tab}Consistency\par
+{\pntext\f2\'B7\tab}Greater Collaboration \par
+{\pntext\f2\'B7\tab}Reduced Manual Intervention\par
+{\pntext\f2\'B7\tab}Scalability\par
+
+\pard\sa200\sl276\slmult1\b\par
+\b0\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs36 Types of pipeline:\par
+\fs28\par
+
+\pard\sa200\sl276\slmult1 1. Declarative Pipeline\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A simpler and more readable way to define pipelines using a predefined syntax.\par
+{\pntext\f2\'B7\tab}Consists of a single pipeline block with stages and steps.\par
+
+\pard\sa200\sl276\slmult1\b Example:\b0\par
+groovy\par
+pipeline \{\par
+    agent any\par
+    stages \{\par
+        stage('Build') \{\par
+            steps \{\par
+                echo 'Building...'\par
+            \}\par
+        \}\par
+    \}\par
+\}\par
+\par
+\b 2. Scripted Pipeline:\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A more flexible and powerful way to define pipelines, allowing the use of Groovy scripts to define the build logic.\par
+{\pntext\f2\'B7\tab}Uses a node block with arbitrary Groovy code.\par
+
+\pard\sa200\sl276\slmult1\b Example:\b0\par
+node \{\par
+    stage('Build') \{\par
+        echo 'Building...'\par
+    \}\par
+    stage('Test') \{\par
+        echo 'Testing...'\par
+    \}\par
+    stage('Deploy') \{\par
+        echo 'Deploying...'\par
+\b\par
+
+\pard\sa200\sl276\slmult1\qc\fs36 Types of Jobs\par
+\b0\fs28\par
+
+\pard\sa200\sl276\slmult1\b 1. Freestyle Jenkins Jobs:\b0\par
+
+\pard 
+{\listtext\f0\u10625?\tab}\jclisttab\tx360\ls1\ilvl8\fi-360\li720\sa200\sl276\slmult1 The simplest form of Jenkins job, where each build is defined by a series of steps.\par
+{\listtext\f0 0\tab}Most flexible and customised job type.\par
+
+\pard\sa200\sl276\slmult1\b 2. Pipeline Jenkins Jobs:\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Allows users to define the entire build process as code using a domain-specific language called Groovy.\par
+{\pntext\f2\'B7\tab}Automates a workflow or process through scripted configratution file (jenkins file).\par
+
+\pard\sa200\sl276\slmult1\b 3. Paramterized jobs: \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Parameterised jobs in Jenkins allow you to pass parameters to the job when it is triggered. \par
+{\pntext\f2\'B7\tab}These parameters can control the behavior of the job, making it more flexible and dynamic.Job that accepts parameters.\par
+
+\pard\sa200\sl276\slmult1\b 4. Sequential jobs\b0 :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  Sequential jobs in Jenkins are jobs that run one after the other in a predefined order.\par
+{\pntext\f2\'B7\tab} Each job waits for the previous job to complete before starting. \par
+
+\pard\sa200\sl276\slmult1\b 5. Parallel jobs: \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Parallel jobs in Jenkins are jobs that run simultaneously. \par
+{\pntext\f2\'B7\tab}This is useful for speeding up the build process by executing independent tasks at the same time. \par
+
+\pard\sa200\sl276\slmult1\b 6.Triggered jobs:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 A job triggered by a specific event or action.\b\par
+
+\pard\sa200\sl276\slmult1\b0\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\b\par
+
+\pard\sa200\sl276\slmult1\qc\fs36 Jenkins Environments :\par
+\b0\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent360\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b Development (DEV): \b0 This is where developers integrate and test their code. It's the first stage where initial builds and unit tests are run.\par
+{\pntext\f0 2.\tab}\b Testing/Quality Assurance (QA): \b0 More extensive testing is performed, including integration tests, functional tests, and sometimes performance tests.\par
+{\pntext\f0 3.\tab}\b User Acceptance Testing (UAT): \b0 This environment is used for user acceptance testing. It's a pre-production environment where end-users validate the functionality and performance of the application.\par
+{\pntext\f0 4.\tab}\b Staging: \b0 The staging environment is a copy of the production environment. It's used for final testing before the code is deployed to production. \par
+{\pntext\f0 5.\tab}\b Production (PROD): \b0 This is the live environment where the application is accessible to end-users. The code that passes all previous stages is deployed here.\b\par
+
+\pard\sa200\sl276\slmult1\par
+Why we need Environemnts in Jenkins :\b0\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent360\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Quality Assurance\par
+{\pntext\f0 2.\tab}Consistency\par
+{\pntext\f0 3.\tab}Isolation\par
+{\pntext\f0 4.\tab}Configuration Management\par
+{\pntext\f0 5.\tab}Automated Deployment\par
+{\pntext\f0 6.\tab}Roll-back Strategy\par
+{\pntext\f0 7.\tab}Collaboration\par
+
+\pard\sa200\sl276\slmult1\b\par
+\fs36 Jenkins Important configuration files:\b0\fs28\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent360{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  Home directory : /var/lib/jenkins\par
+{\pntext\f2\'B7\tab}Installed plugins : /var/lib/jenkins/plugins\par
+{\pntext\f2\'B7\tab}Created job list : /var/lib/jenkins/workspace\par
+{\pntext\f2\'B7\tab}Nodes Information : /var/lib/jenkins/nodes\par
+{\pntext\f2\'B7\tab}Jenkins log Information : /var/lib/jenkins/log\par
+{\pntext\f2\'B7\tab}List of jobs : /var/lib/jenkins/jobs\par
+{\pntext\f2\'B7\tab}Created users list : /var/lib/jenkins/users\par
+
+\pard\sa200\sl276\slmult1\b\par
+\b0\f1\fs22\par
+}
+ 
